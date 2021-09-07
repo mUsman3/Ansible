@@ -1,0 +1,16 @@
+# Ansible Cheatsheet
+
+### To see list of connection types with managed Node
+#### ansible-doc -t connection -l
+#### or
+#### ansible-doc --type connection --list
+
+### ansible copy module
+#### ansible -m copy -a "src=path_along_with_file dest=/Destination_path" localhost/any_remote_server
+
+### check flag, it is used to check if there is any changes made in dest file
+#### ansible -m copy -a "src=usman.txt dest=/home/usmannow3/Ansible-Test" --check localhost
+
+### diff flag, it is used to show exact changes made while performing specific task/change
+#### ansible -m copy -a "src=usman.txt dest=/home/usmannow3/Ansible-Test" --diff localhost
+
